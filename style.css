@@ -1,19 +1,171 @@
 body
 {
+    background-color: #023535;
     color: white;
-    font-size: 18px;
+    margin: 0;
+    font-size: 19px;
+    min-width: 1000px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+	min-height: 100px;
 }
 
+.wrapper
+{
+    width: 100%;
+}
 
+.header
+{
+    width: 100%;
+    background-color: #0fc2bf;
+	padding: 35px 0;
+}
+
+.logo
+{
+	/*width: 500px;*/
+    text-align: center;
+	font-size: 54px;
+	margin-left: auto;
+	margin-right: auto;
+    font-weight: 900;
+}
+
+.nav
+{ 
+	width: 100%;
+	padding: 10px 0;
+	background-color: #008F8C;
+	text-align: center;
+	border-top: 2px solid #015958;
+	border-bottom: 2px solid #015958;
+}
+
+.content_border
+{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1050px;
+	background-color: #02423B;
+}
+
+.content
+{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	padding: 10px;
+    color: #ffffff;
+}
+
+.footer
+{
+	text-align: center;
+	background-color: #008F8C;
+	padding: 30px;
+    border-top: 2px solid #015958;
+}
+
+/* ---------- NAGŁÓWEK - POCZĄTEK ---------- */
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 50px;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ol > li > a
+{
+	width: 150px;
+	height: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ol > li
+{
+	float: left;
+	width: 150px;
+	height: 50px;
+	border-right: 1px dashed #2B0E0E;
+	text-align: center;
+	line-height: 22px;
+}
+
+ol > li:first-child
+{
+	border-left: 1px dashed #2B0E0E;
+}
+
+ol > li:hover
+{
+	background-color: #007A78;
+}
+
+/*
+ol > li:hover > a
+{
+	color: #ffffff;
+}
+*/
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	/*height: 40px;*/
+	display: none;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color:#008280;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #2B0E0E;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #00ADAB;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #2B0E0E;
+	display: block;
+	width: 150px;
+}
+
+/* ---------- NAGŁÓWEK - KONIEC ---------- */
+
+/* ---------- PRZEWODNIK - POCZĄTEK ---------- */
 .box 
 {
-    background: #1C74B2;
-    min-height: 180px;
+    background: #008F8C;
+    min-height: 167px;
     width: 280px;
     padding: 10px;
-    border: solid #1B63A1;
+    border: solid #015958;
     border-width: 4px 4px 4px 0px;
     border-radius: 0px 20px 20px 0px;
     position: fixed;
@@ -42,27 +194,21 @@ body
     transition: 0.4s;
 }
 
-/*
-.box__content {
-    background: #1C74B2;
-    min-height: 200px;
-    padding: 10px;
-    position: relative;
-}
-*/
 .box__title {
-    background: #1C74B2;
-    border: solid #1B63A1;
+    background: #008F8C;
+    border: solid #015958;
     border-radius: 0px 0px 10px 10px;
     border-width: 0px 4px 4px;
     cursor: default;
-    font-size: 18px;
+    font-size: 18.5px;
     height: 30px;
     line-height: 30px;
     position: absolute;
-    right: -74px;
+    right: -84px;
     text-align: center;
-    top: 70px;
+    top: 65px;
     transform: rotate(-90deg);
     width: 106px;
+	padding: 5px;
 }
+/* ---------- PRZEWODNIK - KONIEC ---------- */
